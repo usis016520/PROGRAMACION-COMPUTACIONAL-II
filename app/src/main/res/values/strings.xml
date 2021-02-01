@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CalculadoraRoberto</string>
+    <string-array name="operacionesbasicas">
+        <item>porcentaje</item>
+        <item>exponenciacion</item>
+        <item>raiz</item>
+        <item>modulo</item>
+        <item>mayor de 2 numeros</item>
+    </string-array>
+</resources>

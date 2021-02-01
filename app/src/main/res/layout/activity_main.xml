@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/lbltitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OPERACIONES BASICAS"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/txtnum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbltitulo"
+        android:hint="Escribe un numero"
+        android:layout_margin="2dp"/>
+
+    <EditText
+        android:id="@+id/txtnum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtnum1"
+        android:hint="Escribe un numero"
+        android:layout_margin="5dp"/>
+
+
+    <RadioGroup
+        android:id="@+id/optOperacionesBasicas"
+        android:layout_width="195dp"
+        android:layout_height="470dp"
+        android:layout_below="@id/txtnum2"
+        android:layout_margin="5dp">
+
+        <RadioButton
+            android:id="@+id/optSuma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <RadioButton
+            android:id="@+id/optResta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <RadioButton
+            android:id="@+id/optMultiplicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x" />
+
+        <RadioButton
+            android:id="@+id/optDivision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/" />
+
+        <RadioButton
+            android:id="@+id/optfactorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="!" />
+
+        <RadioButton
+            android:id="@+id/optPorcentaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%" />
+
+        <RadioButton
+            android:id="@+id/optexpo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="^" />
+
+        <RadioButton
+            android:id="@+id/optraiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RAIZ" />
+
+        <RadioButton
+            android:id="@+id/modulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MOD" />
+
+        <RadioButton
+            android:id="@+id/mayorde2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/lblRespuesta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/optOperacionesBasicas"
+        android:layout_marginTop="1dp"
+        android:text="Respuesta ?"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblRespuesta"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="calcular"
+        android:text="Calcular" />
+
+
+</RelativeLayout>
